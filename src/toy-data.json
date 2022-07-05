@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Monopoly",
+        "description": "Play as a banker, a player or a computer",
+        "price": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 2,
+        "title": "Connect 4",
+        "description": "Get 4 in a row to win",
+        "price": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 3,
+        "title": "Locomotive",
+        "description": "Start of the line",
+        "price": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 4,
+        "title": "Caboose",
+        "description": "End of the line",
+        "price": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 5,
+        "title": "Doll",
+        "description": "Play as a doll",
+        "price": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 6,
+        "title": "Action Figure",
+        "description": "Play as an action figure",
+        "price": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 7,
+        "title": "Building Set",
+        "description": "Build a house",
+        "price": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 8,
+        "title": "Block",
+        "description": "Build a block",
+        "price": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 9,
+        "title": "Plane",
+        "description": "Fly",
+        "price": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": 10,
+        "title": "Car",
+        "description": "Drive",
+        "price": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    }
+]
