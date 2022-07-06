@@ -17,9 +17,9 @@ const Home = () => {
     },
     {
       id: 3,
-      title: 'Dolls & Action Figures',
+      title: 'RC Toys',
       imageUrl:
-        'https://images.unsplash.com/photo-1619768470847-f7db55f5d72e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
+        'https://images.unsplash.com/photo-1627822607472-5bb8cd7812dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
     },
     {
       id: 4,
@@ -29,19 +29,18 @@ const Home = () => {
     },
     {
       id: 5,
-      title: 'RC Toys',
+      title: 'Dolls & Action Figures',
       imageUrl:
-        'https://images.unsplash.com/photo-1627822607472-5bb8cd7812dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+        'https://images.unsplash.com/photo-1619768470847-f7db55f5d72e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
     },
   ];
 
-    return (
-        <div>
-            <Directory categories={categories} />
-             <Outlet />
-        </div>
-
-    );
+  return (
+    <div>
+      <Directory categories={categories} />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Home;
