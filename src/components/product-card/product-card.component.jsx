@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
     <div className="product-card-container">
       <img src={imageUrl} alt={`${title}`} />
       <div className="footer">
-        <span className="name">{title}</span>
+        <span className="title">{title}</span>
         <span className="price">{price}</span>
       </div>
       <Button buttonType="inverted">Add to cart</Button>
