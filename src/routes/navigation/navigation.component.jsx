@@ -1,11 +1,12 @@
 import { Fragment, useContext } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
+import CartIcon from '../../components/cart-icon/cart-icon.component';
+import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
+
 import { UserContext } from '../../contexts/user.context';
 import { CartContext } from '../../contexts/cart.context';
 
-import CartIcon from '../../components/cart-icon/cart-icon.component';
-import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
 import { ReactComponent as ToyLogo } from '../../assets/logo.svg';
 
 import { signOutUser } from '../../utils/firebase/firebase.utils';
@@ -21,6 +22,9 @@ const Navigation = () => {
       <div className="navigation">
         <Link className="logo-container" to="/">
           <ToyLogo className="logo" />
+        </Link>
+        <Link className="logo-text-container" to="/">
+          <div className="logo-text"> ToyMart </div>
         </Link>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
