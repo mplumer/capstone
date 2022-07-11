@@ -5,12 +5,12 @@ import './product-card.styles.scss';
 
 import Button from '../button/button.component';
 
-const ProductCard = ({ product }) => {
-  const { name, price, imageUrl } = product;
+const ProductCard = ({ toy }) => {
+  const { name, price, imageUrl } = toy;
   const { addItemToCart } = useContext(CartContext);
 
   const addProductToCart = () => {
-    addItemToCart(product);
+    addItemToCart(toy);
   };
 
   return (
