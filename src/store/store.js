@@ -1,20 +1,19 @@
-//import { compose, applyMiddleware } from 'redux';
+import { compose, createStore, applyMiddleware } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-
-//import logger from 'redux-logger';
-import monitorReducerEnhancer from './enhancers/monitorReducers';
-import logger from './middleware/logger';
+import logger from 'redux-logger';
 
 import { rootReducer } from './root-reducer';
 
-// const composedEnhancers = compose(
-//   applyMiddleware(...middlewares),
-//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+// const middleWares = [process.env.NODE_ENV === 'development' && logger].filter(
+//   Boolean
 // );
+
+// const composedEnhancers = compose(applyMiddleware(...middleWares));
+
+// export const store = createStore(rootReducer, undefined, composedEnhancers);
 
 export const store = configureStore({
   reducer: rootReducer,
-  devTools: true,
   middleware: [logger],
-  enhancers: [monitorReducerEnhancer],
+  devTools: process.env.NODE_ENV === 'development',
 });
