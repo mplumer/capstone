@@ -12,12 +12,12 @@ import {
   Price,
 } from './product-card.styles';
 
-const ProductCard = ({ product }) => {
-  const { name, price, imageUrl } = product;
+const ProductCard = ({ toy }) => {
+  const { name, price, imageUrl } = toy;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
-  const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
+  const addProductToCart = () => dispatch(addItemToCart(cartItems, toy));
 
   return (
     <ProductCartContainer>
@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
         buttonType={BUTTON_TYPE_CLASSES.inverted}
         onClick={addProductToCart}
       >
-        Add to card
+        Add to cart
       </Button>
     </ProductCartContainer>
   );

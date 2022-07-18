@@ -1,8 +1,11 @@
-import { compose, createStore, applyMiddleware } from 'redux';
-// import logger from 'redux-logger';
+//import { compose, applyMiddleware } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
 import { rootReducer } from './root-reducer';
 
+// Configure the logger to log only when the state changes
 const loggerMiddleware = (store) => (next) => (action) => {
   if (!action.type) {
     return next(action);
@@ -17,8 +20,24 @@ const loggerMiddleware = (store) => (next) => (action) => {
   console.log('next state: ', store.getState());
 };
 
+// Configure how the store should be persisted
+const persistConfig = {
+  key: 'root',
+  storage, // Use local storage as the storage medium
+  blacklist: ['user'], // Blacklist the user reducer from being persisted
+};
+
+// Define the reducer that will be persisted
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+// Constant for logger configuration
 const middleWares = [loggerMiddleware];
 
-const composedEnhancers = compose(applyMiddleware(...middleWares));
+// Create the store
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: middleWares,
+});
 
-export const store = createStore(rootReducer, undefined, composedEnhancers);
+// Create the persistor
+export const persistor = persistStore(store);

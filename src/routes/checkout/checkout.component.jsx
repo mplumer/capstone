@@ -14,7 +14,9 @@ import {
   Total,
 } from './checkout.styles';
 
+// Checkout component
 const Checkout = () => {
+  // Get cart items, total from redux store
   const cartItems = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);
 
@@ -37,6 +39,7 @@ const Checkout = () => {
           <span>Remove</span>
         </HeaderBlock>
       </CheckoutHeader>
+      {/*Loop through cart items based on their id and render checkout item component*/}
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
