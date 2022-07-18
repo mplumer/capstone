@@ -7,9 +7,6 @@
 
 ### View the live site [here](https://max-capstone.netlify.app/)
 
-[![Max Capstone](https://max-capstone.netlify.app/)
-
-
 
 
 
@@ -19,6 +16,52 @@ To use the checkout feature, enter the Stripe test card number:
 ### `4242 4242 4242 4242`
 Then enter any future date, and anything you want for the CVV and Zip code.
 
+
+## Assignment Files
+
+[App.js](https://github.com/mplumer/capstone/blob/main/src/App.js)
+
+[index.js](https://github.com/mplumer/capstone/blob/main/src/index.js)
+
+### Assets
+
+[shop-data.js](https://github.com/mplumer/capstone/blob/main/src/assets/shop-data.js)
+
+## Components
+
+[cart-dropdown](https://github.com/mplumer/capstone/tree/main/src/components/cart-dropdown)
+
+[cart-item](https://github.com/mplumer/capstone/tree/main/src/components/cart-item)
+
+[checkout-item](https://github.com/mplumer/capstone/tree/main/src/components/checkout-item)
+
+[payment-form](https://github.com/mplumer/capstone/tree/main/src/components/payment-form)
+
+[product-card](https://github.com/mplumer/capstone/tree/main/src/components/product-card)
+
+## Routes
+
+[checkout](https://github.com/mplumer/capstone/tree/main/src/routes/checkout)
+
+[navigation](https://github.com/mplumer/capstone/tree/main/src/routes/navigation)
+
+[shop](https://github.com/mplumer/capstone/tree/main/src/routes/shops)
+
+## Store
+
+[store.js](https://github.com/mplumer/capstone/blob/main/src/store/store.js)
+
+[root-reducer.js](https://github.com/mplumer/capstone/blob/main/src/store/root-reducer.js)
+
+[cart](https://github.com/mplumer/capstone/blob/main/src/store/cart)
+
+## Utils
+
+[firebase-db](https://github.com/mplumer/capstone/blob/main/src/utils/firebase/firebase.utils.js)
+
+[reducer](https://github.com/mplumer/capstone/blob/main/src/utils/firebase/reducer.utils.js)
+
+[stripe](https://github.com/mplumer/capstone/blob/main/src/utils/firebase/stripe.utils.js)
 
 ## Available Scripts
 
