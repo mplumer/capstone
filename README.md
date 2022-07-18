@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# IT499 Bachelors Capstone Project
+###   Shopping Cart Application Development
+###   Maxwell Plumer
+##
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/358676ea-d0bd-4689-acca-7aead6da26d7/deploy-status)](https://app.netlify.com/sites/max-capstone/deploys)  
+
+### View the live site [here](https://max-capstone.netlify.app/)
+
+[![Max Capstone](https://max-capstone.netlify.app/)
+
+
+
+
+
+## Stripe
+
+To use the checkout feature, enter the Stripe test card number: 
+### `4242 4242 4242 4242`
+Then enter any future date, and anything you want for the CVV and Zip code.
+
 
 ## Available Scripts
 
@@ -22,6 +40,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
