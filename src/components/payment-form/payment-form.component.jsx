@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { selectCartTotal } from '../../store/cart/cart.selector';
 import { selectCurrentUser } from '../../store/user/user.selector';
 
-import { FormContainer } from './payment-form.styles';
+import { FormContainer, PaymentContainer } from './payment-form.styles';
 import { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
 import { PaymentButton } from './payment-form.styles';
@@ -57,16 +57,18 @@ const PaymentForm = () => {
   };
 
   return (
-    <FormContainer onSubmit={paymentHandler}>
-      <h2>Credit Card Payment:</h2>
-      <CardElement />
-      <PaymentButton
-        buttonType={BUTTON_TYPE_CLASSES.inverted}
-        isLoading={isProcessingPayment}
-      >
-        Pay Now
-      </PaymentButton>
-    </FormContainer>
+    <PaymentContainer onSubmit={paymentHandler}>
+      <FormContainer>
+        <h2>Credit Card Payment:</h2>
+        <CardElement />
+        <PaymentButton
+          buttonType={BUTTON_TYPE_CLASSES.inverted}
+          isLoading={isProcessingPayment}
+        >
+          Pay Now
+        </PaymentButton>
+      </FormContainer>
+    </PaymentContainer>
   );
 };
 export default PaymentForm;

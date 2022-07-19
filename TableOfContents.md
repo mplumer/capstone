@@ -7,7 +7,7 @@
 
 ### View the live site [here](https://max-capstone.netlify.app/)
 
-
+### View the GitHub repository [here](https://github.com/mplumer/capstone)
 
 
 ## Stripe

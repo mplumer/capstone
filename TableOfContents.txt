@@ -3,12 +3,11 @@
 ###   Maxwell Plumer
 ##
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/358676ea-d0bd-4689-acca-7aead6da26d7/deploy-status)](https://app.netlify.com/sites/max-capstone/deploys)  
-
-### View the live site [here](https://max-capstone.netlify.app/)
 
 
+View the live site [here](https://max-capstone.netlify.app/)
 
+View the GitHub repository [here](https://github.com/mplumer/capstone)
 
 ## Stripe
 
